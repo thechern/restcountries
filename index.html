@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Rest Countries API</title>
+        <style>
+
+            img {
+                width: 200px;
+                height: auto;
+            }
+	    table {
+		border-collapse: collapse;
+		border-spacing: 0;
+		border: 1px solid #bbb;
+	    }
+	    thead {
+		font-weight:bold;
+	    }
+	    tbody tr:nth-child(even) td {
+		background-color: #eee;
+	    }
+	    td, th {
+		border-top: 1px solid #ddd;
+		padding: 4px 8px;
+	    }
+	    @media screen and (max-width: 640px) {
+                table {
+                    overflow-x: auto;
+                    display: block;
+		}
+	    }
+
+        </style>
+    </head>
+    <body>
+
+        <form id="test" method="get">
+            <label for="country-in">Country</label>
+            <input id="country-in" name="country"></input><br>
+            <label for="country-code">Country Code</label>
+            <input id="country-code" name="country-code"></input>
+        </form>
+
+        <button id="submit">Submit</button><br><br>
+
+        <div id="result"></div><br>
+        <div id="summary-count"></div><br>
+        <div id="summary-region"></div><br>
+        <div id="summary-subregion"></div>
+
+        <script src="http://code.jquery.com/jquery-latest.min.js"
+                type="text/javascript"></script>
+        <script src="getcountries.js" type="text/javascript"></script>
+
+    <body>
+</html>
+
+
